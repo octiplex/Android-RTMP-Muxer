@@ -1,0 +1,1 @@
+# Public proguard rules that will be shipped with the modules goes there
