@@ -270,7 +270,7 @@ public final class RtmpMuxer implements RtmpReader.RtmpReaderListener
          * C1 A. time
          */
         long currentTime = time.getCurrentTimestamp();
-        buffer[1] = (byte) ((currentTime >> 8) & 255);
+        buffer[1] = (byte) ((currentTime >> 24) & 255);
         buffer[2] = (byte) ((currentTime >> 16) & 255);
         buffer[3] = (byte) ((currentTime >> 8) & 255);
         buffer[4] = (byte) (currentTime & 255);
